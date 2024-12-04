@@ -8,6 +8,7 @@ import (
 	"os"
 	"strings"
 	"sync"
+	"time"
 )
 
 // ANSI color codes
@@ -19,7 +20,10 @@ const (
 
 // Function to send OPTIONS request and check for PUT method
 func checkPUTMethod(domain string) bool {
-	client := &http.Client{}
+	client := &http.Client{
+		Timeout: time.Second * 10, // 10 seconds timeout for each request
+	}
+
 	req, err := http.NewRequest("OPTIONS", domain, nil)
 	if err != nil {
 		fmt.Printf("Error creating request for domain %s: %v\n", domain, err)
