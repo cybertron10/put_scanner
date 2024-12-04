@@ -8,3 +8,10 @@ To install the tool using `go get`:
 
 ```bash
 go get github.com/cybertron10/put_scanner
+```
+Usage
+Once installed, you can run the tool with the following flags:
+
+-l (required): Path to the file containing a list of domains.
+-o: Path to the output file where the results will be saved. Default is output.txt.
+-c: The number of concurrent workers. Default is 10.
