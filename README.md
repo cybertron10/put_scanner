@@ -4,11 +4,24 @@
 
 ## Installation
 
-To install the tool using `go get`:
+### For Go 1.18 and Above (Recommended)
+If you have Go 1.18 or above, you should use the `go install` command to install the tool:
 
 ```bash
+go install github.com/cybertron10/put_scanner@latest
+```
+This will download and install the latest version of put_scanner into your $GOBIN directory.
+
+### For Go 1.17 and Below
+If you're using Go 1.17 or below, you'll need to use the older go get command:
+
+```
 go get github.com/cybertron10/put_scanner
 ```
+This will download and install the tool in your $GOPATH/bin directory.
+
+Make sure that $GOPATH/bin is added to your PATH environment variable to run put_scanner from anywhere.
+
 ## Usage
 
 Once installed, you can run the tool with the following flags:
