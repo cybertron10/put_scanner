@@ -8,7 +8,7 @@ To install the tool using `go get`:
 
 ```bash
 go get github.com/cybertron10/put_scanner
-
+```
 Usage
 Once installed, you can run the tool with the following flags:
 
