@@ -26,7 +26,7 @@ put_scanner -l domains.txt -o vulnerable_domains.txt -c 20
 ```
 This will check each domain in domains.txt, and any domain where the PUT method is enabled will be saved to vulnerable_domains.txt.
 
-###License
+### License
 This tool is open-source and licensed under the MIT License.
 
 ```
